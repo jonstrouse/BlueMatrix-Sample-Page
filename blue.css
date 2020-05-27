@@ -113,8 +113,11 @@ header h4 {
   margin: auto;
   margin-bottom: 2em;
 }
+.title br {
+  display: none;
+}
 .title p {
-  display: inline;
+  line-height: .5rem;
   font-size: .8em;
   margin-right: .5em;
 }
@@ -306,6 +309,12 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .title br {
+    display: block;
+  }
+  .title p {
+    display: inline;
+  }
   .market-data,
   .estimates {
     width: 49.5%;
